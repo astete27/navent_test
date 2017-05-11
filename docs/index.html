@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/form-validation.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container">
+  <h2>Crear Pedido</h2>
+  <form action="" name="crearpedido">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="100" required="required"/>
+
+    <label for="monto">Monto</label>
+    <input type="text" name="monto" id="monto" placeholder="00" required="required"/>
+
+    <label for="descuento">Descuento</label>
+    <input type="descuento" name="descuento" id="descuento" placeholder="00" onkeypress="return valida(event)""/>
+
+    <input type="button" id="botonenviar" value="Enviar">
+
+  </form>
+</div>
+
+</body>
+</html>
