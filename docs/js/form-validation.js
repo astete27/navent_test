@@ -24,24 +24,17 @@ function validaForm(){
         $("#monto").focus();
         return false;
     }
-}
+
  
     return true; // Si todo está correcto
 }
 	
-$(document).ready( function() { // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
- $("#botonenviar").click( function() { // Con esto establecemos la acción por defecto de nuestro botón de enviar.
- if(validaForm()){ // Primero validará el formulario.
- $.post("pedidos/guardar",$("#crearpedido").serialize(),function(res){
-	 
-	 
-	 $(document).ready( function() {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
-		    $("#botonenviar").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
-		        if(validaForm()){                               // Primero validará el formulario.
-		            $.post("pedidos/guardar",$("#crearpedido").serialize(),function(res){
-		                
-		            });
-		        }
-		    });    
-		});
- }
+$(document).ready( function() {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
+		$("#botonenviar").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
+			if(validaForm()){                               // Primero validará el formulario.
+				$.post("pedidos/guardar",$("#crearpedido").serialize(),function(res){
+					
+				});
+			}
+		});    
+});
