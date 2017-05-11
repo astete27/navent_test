@@ -15,10 +15,10 @@
     <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="100" required="required"/>
 
     <label for="monto">Monto</label>
-    <input type="text" name="monto" id="monto" placeholder="00" required="required"/>
+    <input type="text" name="monto" id="monto" placeholder="00" required="required" onkeypress="return valida(event)"/>
 
     <label for="descuento">Descuento</label>
-    <input type="descuento" name="descuento" id="descuento" placeholder="00" onkeypress="return valida(event)""/>
+    <input type="descuento" name="descuento" id="descuento" placeholder="00" onkeypress="return valida(event)"/>
 
     <input type="button" id="botonenviar" value="Enviar">
 
